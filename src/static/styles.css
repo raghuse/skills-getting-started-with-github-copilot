@@ -200,3 +200,30 @@ footer {
   font-size: 13px;
   padding: 6px 0;
 }
+
+/* Remove/unregister button */
+.participant-remove {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #b00020;
+  font-size: 14px;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.participant-remove:hover {
+  background-color: rgba(176, 0, 32, 0.08);
+  color: #ff1744;
+}
+
+.participant-remove:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
